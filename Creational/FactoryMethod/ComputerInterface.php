@@ -8,6 +8,6 @@ namespace DesignPatterns\Creational\FactoryMethod;
 
 interface ComputerInterface
 {
-
     public function setCpu($cpu);
+    public function setQuality($quality);
 }

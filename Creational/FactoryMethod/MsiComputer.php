@@ -1,20 +1,24 @@
 <?php
 /**
- * 戴尔电脑类
+ * 微星电脑
  */
 
 namespace DesignPatterns\Creational\FactoryMethod;
 
 
-class DellComputer implements ComputerInterface
+class MsiComputer  implements ComputerInterface
 {
     protected $cpu;
     protected $quality;
     public function setCpu($cpu)
     {
-        $this->cpu = $cpu.'-'.'h';
+        $this->cpu = $cpu.'-'.'n';
     }
-    public function setQuality($quality)
+
+    /**
+     * @param mixed $quality
+     */
+    public function setQuality($quality): void
     {
         $this->quality = $quality;
     }
